@@ -11,7 +11,7 @@ This web application is built to send SMS notifications using Twilio's messaging
 ## Technologies Used
 - Frontend: Vite, React, Twilio API
 - Backend: Express, Twilio API, MongoDB, Razorpay,Auth0
-- Authentication: JWT (JSON Web Tokens)
+- Authentication: Auth0
 - Database: MongoDB
 ## Project Status
 This project is currently in active development.
