@@ -30,7 +30,7 @@ const Content = () => {
       ) : (
         <Route exact path="/" element={<Main />} />
       )}
-      <Route exact path="/Signin" element={<Signin />} />
+      
     </Routes>
   );
 };
