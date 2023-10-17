@@ -191,7 +191,7 @@ const sendSmsAtSpecificTime = () => {
   if (currentDate.getMinutes() === 10 && (currentDate.getHours() === 11 ||currentDate.getHours() === 7 || currentDate.getHours() === 16 || currentDate.getHours() ===19  ) ) {
     console.log("Sending SMS...");
     // Send SMS messages by making an HTTP POST request to your API endpoint
-    fetch('http://localhost:5000/api/sendSmsToUsers', {
+    fetch('https://message-sender-h38a-ku66okij6-jay9358s-projects.vercel.app/api/sendSmsToUsers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
