@@ -11,7 +11,7 @@ const fetch = require('node-fetch');
 const app = express();
 
 
-const port = 5000; // or any port you prefer
+const port =process.env.PORT || 5000; // or any port you prefer
 const database="users"
 const menu = "menu";
 app.use(cors());
