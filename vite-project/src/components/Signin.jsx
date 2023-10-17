@@ -33,7 +33,7 @@ function Signin() {
       const fetchFlagStatus = async () => {
         try {
           console.log(userName);
-          const response = await fetch(`http://localhost:5000/api/getFlagStatus?email=${userName}`, {
+          const response = await fetch(`https://message-sender-h38a-ku66okij6-jay9358s-projects.vercel.app/api/getFlagStatus?email=${userName}`, {
             method: 'GET',
           });
   

@@ -19,7 +19,7 @@ function Sender() {
     
     const handleSubmit = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/addData', {
+        const response = await fetch('https://message-sender-h38a-ku66okij6-jay9358s-projects.vercel.app/api/addData', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
