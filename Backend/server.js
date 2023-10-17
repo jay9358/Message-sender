@@ -14,6 +14,7 @@ const app = express();
 const port =process.env.PORT || 5000; // or any port you prefer
 const database="users"
 const menu = "menu";
+app.use(cors());
 app.use(cors({origin: 'https://message-sender-iota.vercel.app'}));
 app.use(bodyParser.json());
 
