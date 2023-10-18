@@ -98,7 +98,7 @@ app.post('/api/sendSmsToUsers', async (req, res) => {
     const currenttime=new Date().getHours();
     console.log(currenttime);
       // Connect to the MongoDB database
-      const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+      const client = new MongoClient(url);
       await client.connect();
       console.log("Database connected");
        let meals=null;
