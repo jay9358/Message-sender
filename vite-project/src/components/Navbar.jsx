@@ -119,16 +119,18 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                <LoginButton ></LoginButton>
+                  <button  id="hamburger"
+              aria-label="hamburger"
+              onClick={handleIconClick}
+              aria-haspopup="true"
+              aria-expanded={isNavMenuOpen ? 'true' : 'false'}><LoginButton></LoginButton></button>
+                
                 </li>
               </ul>
             </nav>
           </div>
           <div className="nav-end">
-            <div className="right-container">
-              <LoginButton ></LoginButton>
-             
-            </div>
+            <LoginButton></LoginButton>
             <button
               id="hamburger"
               aria-label="hamburger"
