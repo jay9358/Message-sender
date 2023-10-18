@@ -98,7 +98,7 @@ app.post('/api/sendSmsToUsers', async (req, res) => {
     const currenttime=new Date().getHours();
     console.log(currenttime);
       // Connect to the MongoDB database
-      const client = new MongoClient(url);
+      const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
       await client.connect();
       console.log("Database connected");
        let meals=null;
@@ -155,7 +155,7 @@ app.get('/api/getFlagStatus', async (req, res) => {
     const { email } = req.query; // Get the username from the query parameters
 
     // Connect to the MongoDB database
-    const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+    const client = new MongoClient(url);
     await client.connect();
     console.log("Database connected");
 
@@ -188,7 +188,7 @@ const sendSmsAtSpecificTime = () => {
   // Check if the current time is the specific time you want to send SMS (e.g., 4:40 AM)
   const currentDate = new Date();
 
-  if (currentDate.getMinutes() >30 && (currentDate.getHours() === 2 ||currentDate.getHours() === 7 || currentDate.getHours() === 16 || currentDate.getHours() ===19  ) ) {
+  if (currentDate.getMinutes() >30 && (currentDate.getHours() === 11 ||currentDate.getHours() === 7 || currentDate.getHours() === 16 || currentDate.getHours() ===19  ) ) {
     console.log("Sending SMS...");
     // Send SMS messages by making an HTTP POST request to your API endpoint
     fetch('https://message-sender-gfmr.vercel.app/api/sendSmsToUsers', {
