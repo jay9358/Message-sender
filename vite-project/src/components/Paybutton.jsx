@@ -15,7 +15,7 @@ const RazorpayPayment = (prop) => {
       return;
     }
 
-    const response = await fetch('https://message-sender-h38a-ku66okij6-jay9358s-projects.vercel.app/api/create-razorpay-order', {
+    const response = await fetch('https://message-sender-gfmr.vercel.app/api/create-razorpay-order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const RazorpayPayment = (prop) => {
       
           // Now, you can send data to your webhook
           try {
-            const webhookResponse = await fetch('https://message-sender-h38a-ku66okij6-jay9358s-projects.vercel.app/razorpay-webhook', {
+            const webhookResponse = await fetch('https://message-sender-gfmr.vercel.app/razorpay-webhook', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
