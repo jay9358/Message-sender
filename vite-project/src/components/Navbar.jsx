@@ -118,6 +118,9 @@ function Navbar() {
                     Contact Me
                   </a>
                 </li>
+                <li>
+                <LoginButton ></LoginButton>
+                </li>
               </ul>
             </nav>
           </div>
