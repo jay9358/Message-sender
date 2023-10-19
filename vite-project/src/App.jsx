@@ -6,12 +6,14 @@ import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import Signin from './components/Signin';
 import Works from './components/Works';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Content />
+      <Contact></Contact>
     </Router>
   );
 }

@@ -114,9 +114,7 @@ function Navbar() {
                   </a>)}
                 </li>
                 <li>
-               <a className="nav-link" href="/">
-                    Contact Me
-                  </a>
+                {isAuthenticated ? (<a className="nav-link" href=''>Pricing</a>) :(<span></span>)}
                 </li>
                 <li>
                   <button  id="hamburger"
