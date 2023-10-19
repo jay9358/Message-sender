@@ -4,7 +4,7 @@ import "./assets/css/contact.css"
 
 function Contact() {
   return (
-    <div className='contact_container'>
+    <div id='contact_container'>
           
     <footer className="site-footer">
       <div className="containerr heightt">

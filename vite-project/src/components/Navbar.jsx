@@ -109,13 +109,13 @@ function Navbar() {
                
                 </li>
                 <li>
-                {isAuthenticated ? (<a className="nav-link" href=''>Pricing</a>) : (   <a className="nav-link" href="/">
+                {isAuthenticated ? (<a className="nav-link" href=''>Pricing</a>) : (   <a className="nav-link" href="#contact_container">
                     Contact
                   </a>)}
                 </li>
-                <li>
-                {isAuthenticated ? (<a className="nav-link" href=''>Pricing</a>) :(<span></span>)}
-                </li>
+               
+                {isAuthenticated ? (<li><a className="nav-link" href='#contact_container'>Contact me</a></li>) : (<></>)}
+               
                 <li>
                   <button  id="hamburger"
               aria-label="hamburger"
