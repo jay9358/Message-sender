@@ -7,7 +7,8 @@ import Intro from './components/Intro';
 import Signin from './components/Signin';
 import Works from './components/Works';
 import Contact from './components/Contact';
-
+import Pricing from './components/Pricing';
+import Profile  from './components/Profile';
 function App() {
   return (
     <Router>
@@ -32,6 +33,8 @@ const Content = () => {
       ) : (
         <Route exact path="/" element={<Main />} />
       )}
+      <Route exact path='/pricing' element={<Pricing></Pricing>}/>
+      <Route exact path="/profile" element={<Profile></Profile>}></Route>
       
     </Routes>
   );

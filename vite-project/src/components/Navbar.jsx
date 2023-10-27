@@ -103,13 +103,13 @@ function Navbar() {
                 
                 </li>
                 <li>
-                  {isAuthenticated ? (<a className="nav-link" href=''>Profile</a> ) : (   <a className="nav-link" href="/">
+                  {isAuthenticated ? (<Link className="nav-link" to="/profile">Profile</Link> ) : (   <a className="nav-link" href="/">
                     Features
                   </a>)}
                
                 </li>
                 <li>
-                {isAuthenticated ? (<a className="nav-link" href=''>Pricing</a>) : (   <a className="nav-link" href="#contact_container">
+                {isAuthenticated ? (<Link className="nav-link" to="/pricing">Pricing</Link>) : (   <a className="nav-link" href="#contact_container">
                     Contact
                   </a>)}
                 </li>

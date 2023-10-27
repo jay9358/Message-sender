@@ -1,0 +1,8 @@
+.pricing_container{
+    height: 100vh;
+}
+.pricing_container h1{
+    color: white;
+    padding: 2rem;
+    margin: 2rem;
+}
