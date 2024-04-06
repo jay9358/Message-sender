@@ -130,7 +130,7 @@ app.post('/api/sendSmsToUsers', async (req, res) => {
       const users = await collection.find({}).toArray();
       for (const user of users) {
         const recipient = {
-            from: '+19209456134', // Your Twilio number
+            from: '+12057548372', // Your Twilio number
             to: user.number, // User's phone number from the database
             body: `Today is ${menuItem.message}`, // Customize the message
         };
